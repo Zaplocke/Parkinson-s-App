@@ -1,0 +1,9 @@
+# Android Studio
+*.1ml
+.gradle
+/local.properties
+/.idea/libraries
+/.idea/workspaces.xml
+/build
+/captures
+.externalNativeBuild
