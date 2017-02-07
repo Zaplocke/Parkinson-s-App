@@ -10,15 +10,39 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.abdulkarimbarry.bestapp.MainActivity">
 
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/UserInput"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/Addbutton"
+        tools:text="Add"
+        android:onClick="AddButtonClick" />
+
+    <Button
+        android:text="Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/Addbutton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/DeleteButton"
+        android:onClick="DeleteButtonClicked" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="yText"
         android:id="@+id/yText"
-        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="51dp"
+        android:layout_above="@+id/UserInput"
+        android:layout_alignLeft="@+id/zText"
+        android:layout_alignStart="@+id/zText"
         android:layout_alignRight="@+id/zText"
-        android:layout_alignEnd="@+id/zText"
-        android:layout_marginBottom="178dp" />
+        android:layout_alignEnd="@+id/zText" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -26,16 +50,36 @@
         android:text="xText"
         android:id="@+id/xText"
         android:layout_alignParentTop="true"
-        android:layout_alignLeft="@+id/zText"
-        android:layout_alignStart="@+id/zText"
-        android:layout_marginTop="63dp" />
+        android:layout_alignLeft="@+id/yText"
+        android:layout_alignStart="@+id/yText"
+        android:layout_marginTop="45dp" />
+
+    <EditText
+        android:inputType="textPersonName"
+        android:text="Save Data"
+        android:ems="10"
+        android:id="@+id/UserInput"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_above="@+id/UserText"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="zText"
         android:id="@+id/zText"
-        android:layout_below="@+id/xText"
+        android:layout_above="@+id/yText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp" />
+        android:layout_marginBottom="101dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/UserText"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
